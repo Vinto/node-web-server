@@ -45,6 +45,13 @@
    });
  });
 
+ app.get('/projects', (req, res) => {
+   res.render('projects.hbs', {
+     pageTitle: 'Projects',
+     message: 'Portfolio!'
+   });
+ });
+
  app.get('/bad', (req, res) => {
    res.send({
      errorMessage: 'Error occured!'
